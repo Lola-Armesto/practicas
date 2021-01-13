@@ -1,0 +1,93 @@
+# Query: include
+# ContextLines: 1
+
+21 results - 14 files
+
+php_inicial_01\php_inicial_01_001\Ejercicio 01_001.php:
+  10  <?php
+  11: include_once("../../dB_conexion/conexion.php");
+  12  // Insertar Datos (Harcodeados)
+
+php_inicial_01\php_inicial_01_002\datos.php:
+  10  
+  11: include_once("../../dB_conexion/conexion.php");
+  12  // Recogiendo datos del formulario
+
+php_inicial_01\php_inicial_01_003\datos.php:
+  3  // Realizando conexion con BBDD
+  4: include_once("../../dB_conexion/conexion.php");
+  5  
+
+php_inicial_01\php_inicial_01_003\.vs\php_inicial_01_003\config\applicationhost.config:
+    97              <section name="serverRuntime" overrideModeDefault="Deny" />
+    98:             <section name="serverSideInclude" overrideModeDefault="Deny" />
+    99              <section name="staticContent" overrideModeDefault="Allow" />
+
+   220              <add name="HttpRedirectionModule" image="%IIS_BIN%\redirect.dll" />
+   221:             <add name="ServerSideIncludeModule" image="%IIS_BIN%\iis_ssi.dll" />
+   222              <add name="StaticFileModule" image="%IIS_BIN%\static.dll" />
+
+   416  
+   417:         <serverSideInclude ssiExecDisable="false" />
+   418  
+
+   889                  <add name="HttpRedirectionModule" lockItem="true" />
+   890:                 <add name="ServerSideIncludeModule" lockItem="true" />
+   891                  <add name="StaticFileModule" lockItem="true" />
+
+  1012                  <add name="CGI-exe" path="*.exe" verb="*" modules="CgiModule" resourceType="File" requireAccess="Execute" allowPathInfo="true" />
+  1013:                 <add name="SSINC-stm" path="*.stm" verb="GET,HEAD,POST" modules="ServerSideIncludeModule" resourceType="File" />
+  1014:                 <add name="SSINC-shtm" path="*.shtm" verb="GET,HEAD,POST" modules="ServerSideIncludeModule" resourceType="File" />
+  1015:                 <add name="SSINC-shtml" path="*.shtml" verb="GET,HEAD,POST" modules="ServerSideIncludeModule" resourceType="File" />
+  1016                  <add name="TRACEVerbHandler" path="*" verb="TRACE" modules="ProtocolSupportModule" requireAccess="None" />
+
+php_inicial_01\php_inicial_01_004\datos - copia.php:
+  3  // Realizando conexion con BBDD
+  4: include_once("../dB_conexion/conexion.php");
+  5  
+
+php_inicial_01\php_inicial_01_004\datos.php:
+  3  // Realizando conexion con BBDD
+  4: include_once("../dB_conexion/conexion.php");
+  5  
+
+php_inicial_02\crud_simple\index_crud.php:
+  59  											<?php
+  60: 												include_once("../dB_conexion/conexion.php");
+  61: 												include_once("tabla.php");
+  62  
+
+php_inicial_02\crud_simple\tabla.php:
+  2  	
+  3: 	include_once("../dB_conexion/conexion.php");
+  4  		$tab = "CREATE TABLE IF NOT EXISTS agenda(
+
+php_inicial_02\crud_simple\config\dcrud.php:
+  13  		<?php
+  14: 			include_once("../../dB_conexion/conexion.php");
+  15  			
+
+php_inicial_02\crud_simple\config\icrud.php:
+  11  					<?php
+  12: 						include_once("../../dB_conexion/conexion.php");
+  13  				
+
+php_inicial_02\crud_simple\config\ucrud.php:
+  14  <?php
+  15: 	include_once("../../dB_conexion/conexion.php");
+  16  	
+
+php_inicial_02\php_crud\crud.php:
+  3  // Realizando conexion con BBDD
+  4: include_once("../dB_conexion/conexion.php");
+  5  $tab = "CREATE TABLE IF NOT EXISTS agenda(
+
+php_inicial_02\php_crud\crudup.php:
+  2  
+  3: include_once("../dB_conexion/conexion.php");
+  4   	if (isset($_GET["var"])){
+
+php_inicial_02\php_crud\crudupdate.php:
+  1  <?php
+  2: include_once("../dB_conexion/conexion.php");
+  3  	$tab = "CREATE TABLE IF NOT EXISTS agenda(

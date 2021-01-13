@@ -1,5 +1,5 @@
 <?php
-include("../dB_conexion/conexion.php");
+include_once("../dB_conexion/conexion.php");
 	$tab = "CREATE TABLE IF NOT EXISTS agenda(
 		id_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 		nombre_id varchar(10),

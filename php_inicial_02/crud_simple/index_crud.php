@@ -57,8 +57,8 @@
 							<tbody style = 'border:1px solid black'>
 
 											<?php
-												include("../dB_conexion/conexion.php");
-												include("tabla.php");
+												include_once("../dB_conexion/conexion.php");
+												include_once("tabla.php");
 
 														$sqlcom = "SELECT * FROM agenda ";
 														$sqlej = mysqli_query($db_conn,$sqlcom);

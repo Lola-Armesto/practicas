@@ -1,7 +1,7 @@
 <?php
 
 // Realizando conexion con BBDD
-include("../dB_conexion/conexion.php");
+include_once("../dB_conexion/conexion.php");
 
 // Recogiendo datos del formulario
 $matricula = $_POST['matricula'];

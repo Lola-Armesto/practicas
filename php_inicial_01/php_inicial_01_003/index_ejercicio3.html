@@ -5,8 +5,9 @@
 <link rel="stylesheet" href="../../css/estilo.css" type="text/css" media="screen">
 </head>
 <body>
-<div id="navegacion"></div>
+<div id="navegacion">
 <p><label><a href="../../index.html">Volver a inicio</a></label></p>
+</div>
 <div id = "form">
 	<p>Introduce datos</p>
 	<p>Matricula: <input type="text"  name="matricula" id="matricula" placeholder="Introduce matricula"></p>
@@ -15,9 +16,10 @@
 	<p>Color: <input type="text" name="color" id="color" placeholder="Introduce color"></p>
 	<p>Precio: <input type="number" name="precio" id="precio" placeholder="Introduce precio"></p>
 	<p><button onclick="enviar_formulario()">Enviar</button></p>
+	<p id="resultado"><button onclick="clean()">Limpiar formulario</button></p>
 </div>
 <div id = "res">
-<p id="resultado"><button onclick="clean()">Limpiar formulario</button></p>
+
 </div>	
 		
 	

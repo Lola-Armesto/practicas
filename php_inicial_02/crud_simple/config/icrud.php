@@ -9,7 +9,7 @@
 	</head>
 	<body>
 					<?php
-						include("../../dB_conexion/conexion.php");
+						include_once("../../dB_conexion/conexion.php");
 				
 							if(isset($_POST)){
 

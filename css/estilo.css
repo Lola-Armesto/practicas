@@ -3,7 +3,7 @@ body {
 }
 #menu{
 	
-	width:1000px;
+	width:100%;
 	height:50px;
 	border: solid;
 	color:#6fd113;
@@ -20,6 +20,7 @@ body {
 	width:100%;
 	height:200px;
 	border:solid;
+	float: left;
 }
 .parrafo{
 	color:red; 
