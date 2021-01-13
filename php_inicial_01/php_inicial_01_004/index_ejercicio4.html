@@ -1,12 +1,13 @@
+<!DOCTTYPE html>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-		<link rel="stylesheet" href="../css/estilo.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../css/estilo.css" type="text/css" media="screen">
 		
 	</head>
 	<body>
 		<div id="menu">
-		<button><a href="../index.html">Volver a Inicio</a></button>
+		<button><a href="../../index.html">Volver a Inicio</a></button>
 		</div>
 		
 		<p><h2>Introduce datos:</h2></p>
@@ -18,7 +19,7 @@
 			<p class="parrafo">Modelo: <input type="text" name="modelo" id="modelo" placeholder="Introduce modelo"></p>
 			<p class="parrafo">Color: <input type="text" name="color" id="color" placeholder="Introduce color"></p>
 			<p class="parrafo">Precio: <input type="number" name="precio" id="precio" placeholder="Introduce precio"></p>	
-			<p class="parrafo"><button onclick="enviar_formulario()">Enviar</button></p>
+			<p class="parrafo"><button onclick="enviar_formulario()">Enviar</button><button onclick="clean()">Limpiar</button></p>
 
 		</div>
 
@@ -148,14 +149,26 @@ function genera_tabla(data) {
   body.appendChild(tabla);
   // modifica el atributo "border" de la tabla y lo fija a "2";
   tabla.setAttribute("border", "2");
+ 
   
 }
+
+function clean(data){
+
+	document.getElementById("matricula").value = '';
+	document.getElementById("marca").value = '';
+	document.getElementById("modelo").value = '';
+	document.getElementById("color").value = '';
+	document.getElementById("precio").value ='';
+	
+	location.reload();
+	}
 
 
 
 	</script>
 	
-	
+</div>
 			
 	
 	</body>
