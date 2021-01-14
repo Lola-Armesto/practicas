@@ -70,6 +70,11 @@
 		}
 		
 function genera_tabla(data) {
+	if(data[0].code < 0){
+				console.log(data.length);
+				resultado.innerHTML = data[0].message;
+
+			}else{
 
 		// Obtener la referencia del elemento body
   var body = document.getElementsByTagName("body")[0];
@@ -149,7 +154,7 @@ function genera_tabla(data) {
   body.appendChild(tabla);
   // modifica el atributo "border" de la tabla y lo fija a "2";
   tabla.setAttribute("border", "2");
- 
+  }
   
 }
 

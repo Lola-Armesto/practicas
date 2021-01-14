@@ -102,7 +102,12 @@
 
 function genera_tabla(data) {
 
-
+if(data[0].code < 0){
+				console.log(data.length);
+				
+		var errores = resultado.innerHTML = data[0].message;
+		
+		}else{
 
   for (var i = 0; i < data.length; i++) {
 	// Crea las hileras de la tabla
@@ -156,7 +161,7 @@ function genera_tabla(data) {
   tabla.setAttribute("border", "2");
  
   
-
+	}
 }
 		
 

@@ -2,6 +2,7 @@
 
 // Realizando conexion con BBDD
 include_once("../../dB_conexion/conexion.php");
+include_once("helper.php");
 
 //VALIDACION DATOS LADO SERVIDOR
 
@@ -51,32 +52,5 @@ $jsonObj = json_encode($cadenaJSON);
 //echo $jsonObj;
 die(json_encode($cadenaJSON));
 
-
-// HELPERS ----
-// include_once('archivo helpers');
-
-
-
-function send_err ($code, $message){
-   
-
-    if($code == -1){$message;}
-    if($code == -2){$message;}
-
-
-
-      
- /*   {
-        
-        response {
-            code: $code
-            message : $message
-        }
-        result {}
-    }*/
-    
-  //  die(json_encode($cadenaJSON)); exit;
-
-}
 exit;//end of file
 ?>
